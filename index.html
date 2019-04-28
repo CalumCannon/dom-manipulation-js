@@ -23,12 +23,26 @@
             <label for="release-date" class="primary">Year</label>
             <input type="text" id="releaseDate" required/>
     </div>
-  <input type="submit" value="save"/>
+
+    <div class="form-item">
+            <label for="category" class="primary">Category</label>
+            <select id="category">
+              <option value="" disabled selected></option>
+              <option value="Rock">Rock</option>
+              <option value="Dance">Dance</option>
+              <option value="Jazz">Jazz</option>
+            </select>
+          </div>
+
+
+  <input type="submit" value="save" id="btn"/>
   </div>
+
+
 </form>
 
   <h1>List</h1>
-  <div id="list">
+  <div style="display: flex; flex-direction: row; flex-wrap: wrap;" id="list">
 
   </div>
   <button type="button" id="deleteAll">Delete All List Items</button>
